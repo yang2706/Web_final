@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <title>Final-Project</title>
+</head>
+
+<body>
+
+    <div class="w-full">
+        <div class="bg-white w-full h-[55px] flex items-center justify-between px-[50px] shadow-sm">
+
+            <!-- LEFT -->
+            <div class="flex items-center gap-[50px]">
+
+                <!-- LOGO -->
+                <a href="index.html" class="relative w-[40px] h-[40px] flex items-center justify-center group">
+                    <!-- Default icon -->
+                    <i
+                        class="fa-solid fa-mobile-screen-button text-[30px] text-orange-500 transition-opacity duration-300 group-hover:opacity-0"></i>
+
+                    <!-- Hover icon -->
+                    <i
+                        class="fa-solid fa-house absolute text-[25px] text-orange-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></i>
+                </a>
+
+                <!-- MENU -->
+                <div class="flex items-center gap-[40px] md:flex hidden text-black">
+
+                    <a href="mobile.html" class="relative group hover:text-orange-500">
+                        Mobile
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="watch.html" class="relative group hover:text-orange-500">
+                        Watch
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Smart Home
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Accessories
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <!-- POCO -->
+                    <a href="#" class="px-2 py-1 rounded text-black">
+                        Tablet
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex items-center gap-[20px] relative md:gap-[40px] text-black">
+                <div class="flex items-center gap-[40px] text-black md:flex hidden">
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Discover
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Support
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Community
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                </div>
+
+                <!-- SEARCH -->
+                <i class="fa-solid fa-magnifying-glass text-[22px] md:text-[28px] cursor-pointer"></i>
+
+                <!-- USER -->
+                <a href="signin.html" class="text-[22px] md:text-[28px] cursor-pointer">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <i class="fa-solid fa-list text-[28px] md:text-[28px]"></i>
+                </div>
+                <div id="dropdown" class="hidden absolute top-full mt-2 w-[130px] bg-white rounded shadow-md">
+                    <a href="mobile.html" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
+                    <a href="watch.html" class="block px-4 py-2 hover:bg-gray-100">Watch</a>
+                    <a href="smarthome.html" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100">Accessories</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tablet</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <h1 class="text-[20px] md:text-[30px] text-center font-bold mt-[70px] md:mt-4 ">Apple Series</h1>
+        </div>
+        <div class="w-full h-[500px] flex-cols md:items-center md:justify-around md:flex">
+            <div class="right flex-cols md:flex-col">
+                <h1 class="text-[25px] md:text-[40px] font-bold text-center md:text-start">Iphone 17 Pro Max</h1>
+
+                </p>
+                <p class="text-[15px] md:text-[20px] text-black/80 mt-4 text-center md:text-start">Camera 48MP sensors
+                    and longest-ever
+                    optical zoom 16x</p>
+                <p class="text-[15px] md:text-[20px] text-black/80 text-center md:text-start">powerful A19 Pro chip with
+                    vapor
+                    cooling for sustained performance</p>
+                <div class="mt-6 flex justify-center md:justify-start">
+                    <button class="bg-black text-white py-2 px-6 rounded-xl hover:bg-black/80 cursor-pointer">Learn
+                        more</button>
+                </div>
+            </div>
+            <div class="left">
+                <img src="https://www.gsmpro.com/cdn/shop/files/1_a72b5462-fe67-467b-885a-f9e2a8e6876a.png?v=1757451944"
+                    alt="" class="w-[450px]">
+            </div>
+        </div>
+        <div id="cards" class="grid grid-cols-2 md:grid-cols-4 mt-12 md:mt-0 gap-[15px] px-5 w-full"></div>
+        <div>
+            <h1 class="text-[20px] md:text-[30px] text-center font-bold mt-[70px] md:mt-4 ">Xiaomi Series</h1>
+        </div>
+        <div class="w-full h-[500px] flex-cols md:items-center md:justify-around md:flex">
+            <div class="right flex-cols md:flex-col">
+                <h1 class="text-[25px] md:text-[40px] font-bold text-center md:text-start">Xiaomi 17 Pro Max</h1>
+
+                </p>
+                <p class="text-[15px] md:text-[20px] text-black/80 mt-4 text-center md:text-start">Camera 48MP sensors
+                    and longest-ever
+                    optical zoom 16x</p>
+                <p class="text-[15px] md:text-[20px] text-black/80 text-center md:text-start">powerful 8 ellite chip
+                    with
+                    vapor
+                    cooling for sustained performance</p>
+                <div class="mt-6 flex justify-center md:justify-start">
+                    <button class="bg-black text-white py-2 px-6 rounded-xl hover:bg-black/80 cursor-pointer">Learn
+                        more</button>
+                </div>
+            </div>
+            <div class="left">
+                <img src="https://static0.anpoimages.com/wordpress/wp-content/uploads/2025/09/xiaomi-17-pro-backs.jpg?w=1600&h=1600&fit=crop"
+                    alt="" class="w-[450px]">
+            </div>
+        </div>
+        <div id="cards2" class="grid grid-cols-2 md:grid-cols-4 mt-12 md:mt-0 gap-[15px] px-5 w-full"></div>
+        <div>
+            <h1 class="text-[20px] md:text-[30px] text-center font-bold mt-[70px] md:mt-4 ">Samsung Series</h1>
+        </div>
+        <div class="w-full h-[500px] flex-cols md:items-center md:justify-around md:flex">
+            <div class="right flex-cols md:flex-col">
+                <h1 class="text-[25px] md:text-[40px] font-bold text-center md:text-start">Samsung S25 Ultra</h1>
+
+                <p class="text-[15px] md:text-[20px] text-black/80 mt-4 text-center md:text-start">Camera 48MP sensors
+                    and longest-ever
+                    optical zoom 16x</p>
+                <p class="text-[15px] md:text-[20px] text-black/80 text-center md:text-start">powerful 8 ellitr chip
+                    with
+                    vapor
+                    cooling for sustained performance</p>
+                <div class="mt-6 flex justify-center md:justify-start">
+                    <button class="bg-black text-white py-2 px-6 rounded-xl hover:bg-black/80 cursor-pointer">Learn
+                        more</button>
+                </div>
+            </div>
+            <div class="left">
+                <img src="https://images.fonearena.com/blog/wp-content/uploads/2025/01/Samsung-Galaxy-S25-Ultra-colors-1024x650.jpg"
+                    alt="" class="w-[450px]">
+            </div>
+        </div>
+        <div id="cards3" class="grid grid-cols-2 md:grid-cols-4 mt-12 md:mt-0 gap-[15px] px-5 w-full"></div>
+        <footer class="w-full bg-neutral-900 px-6 py-14">
+            <div class="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- SUPPORT -->
+                <div class="flex flex-col space-y-2">
+                    <h2 class="text-white font-bold text-lg">SUPPORT</h2>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Contact us</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Guide</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Warranty</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">International
+                        Warranty</a>
+
+                </div>
+
+                <!-- ABOUT US -->
+                <div class="flex flex-col space-y-2">
+                    <h2 class="text-white font-bold text-lg">ABOUT US</h2>
+
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Leadership Team</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Agreement</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Integrity &
+                        Compliance</a>
+
+                </div>
+
+                <!-- XIAOMI PROJECTS -->
+                <div class="flex flex-col space-y-2">
+                    <h2 class="text-white font-bold text-lg">PROJECTS</h2>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Renovation</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">POP Run
+                        2025</a>
+                    <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Imagery Awards
+                        2025</a>
+                </div>
+
+                <!-- SOCIAL & NEWSLETTER -->
+                <div class="flex flex-col space-y-5">
+                    <h2 class="text-white font-bold text-lg">Follow Us</h2>
+
+                    <div class="flex gap-4 text-3xl text-gray-400">
+                        <a href="https://www.facebook.com/share/17sWnVeeUP/" target="_blank"
+                            class="hover:text-white transition">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://youtube.com/@xiaomi" target="_blank" class="hover:text-white transition">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a href="https://x.com/Xiaomi" target="_blank" class="hover:text-white transition">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/xiaomi.global/" target="_blank"
+                            class="hover:text-white transition">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+
+                    </div>
+
+                    <p class="text-white font-semibold">Subscribe to our newsletter</p>
+
+                    <input type="email" placeholder="Enter email address"
+                        class="w-full rounded-xl bg-transparent border border-gray-600 px-4 py-2 text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition" />
+                </div>
+            </div>
+
+            <div class="mt-12 text-center text-gray-500 text-sm">
+                © 2025 Xiaomi. All rights reserved.
+            </div>
+        </footer>
+
+        <script>
+            const card = [
+                {
+                    title: "Iphone 17 Pro Max",
+                    des: "6.9-inch Super Retina XDR OLED, Triple camera 48 MP, Powered by Apple A19 Pro chip",
+                    image: "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-17-pro-max-deep-blue-back.png?v=cc5784d1",
+                    price: 1599
+                },
+                {
+                    title: "Iphone 17",
+                    des: "6.3-inch Super Retina XDR OLED Dual 48 MP rear cameras",
+                    image: "https://www.costco.com.au/medias/sys_master/images/hd4/h06/381534832066590.jpg",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Iphone 17 Pro",
+                    des: "Up to 21-day battery life* Supports 150+ sports modes",
+                    image: "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-17-pro-cosmic-orange-back.png?v=cc5784d1",
+                    price: 1249
+                },
+                {
+                    title: "Iphone 16 Pro Max",
+                    des: "all-round sleep and health display,Powered by the Apple A18 Pro chip",
+                    image: "https://shop.greengadgets.net.au/cdn/shop/files/IPH16PRO128BLKA_800x.jpg?v=1749774486",
+                    price: 1399
+                },
+
+                {
+                    title: "Iphone 16 Pro",
+                    des: "6.3-inch Super Retina XDR OLED display with ProMotion (up to 120 Hz)",
+                    image: "https://shop.greengadgets.net.au/cdn/shop/files/IPH16PRO128WHTA_2145cf37-17fc-4058-a7c2-7e27e3d06624_800x.jpg?v=1749774490",
+                    price: 1099
+                },
+                {
+                    title: "Iphone 16",
+                    des: "Powered by the Apple A18 chip,6.1-inch Super Retina XDR OLED",
+                    image: "https://www.mobileciti.com.au/media/catalog/product/a/p/apple-iphone-16-128gb-pink-5.jpg?width=265&height=265&store=mobileciti&image-type=image",
+                    price: 1099
+                },
+                {
+                    title: "Iphone 17 Air",
+                    des: "Ultra-thin and light body,6.5-inch Super Retina XDR OLED display",
+                    image: "https://phonesrefurb.com/cdn-cgi/image/format=auto,slow-connection-quality=30,onerror=redirect/https://phonesrefurb.com/wp-content/uploads/2025/10/1.jpg",
+                    price: 1599
+                },
+                {
+                    title: "Iphone 16 Plus",
+                    des: "6.7-inch Super Retina XDR OLED all-screen display with Dynamic Island and HDR support",
+                    image: "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/IP1624C20_iphone_16_plus_128gb_teal.jpg",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Iphone 15 Pro Max",
+                    des: "6.7-inch Super Retina XDR OLED display,48 MP main wide with sensor-shift optical image",
+                    image: "https://cdn.shopify.com/s/files/1/0588/7901/7013/files/41037bXz-GL.webp?v=1747309388",
+                    price: 1249
+                },
+                {
+                    title: "Iphone 15 Pro",
+                    des: "6.1-inch Super Retina XDR OLED with adaptive refresh up to 120 Hz,Apple A17 Pro chip",
+                    image: "https://shop.greengadgets.net.au/cdn/shop/products/IPH15PRO128BLKA_800x.jpg?v=1749775023",
+                    price: 1399
+                },
+
+                {
+                    title: "Iphone 15",
+                    des: "6.1-inch Super Retina XDR OLED display with 60 Hz,48 MP Main with sensor-shift optical image",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydZmrV_RjEt6RW7fUwyoY2ihn_0doWnHNaQ&s",
+                    price: 1099
+                },
+                {
+                    title: "Iphone 15 Plus",
+                    des: "Powered by the Apple A18 chip,6.7-inch Super Retina XDR OLED",
+                    image: "https://www.jbhifi.com.au/cdn/shop/products/639187-Product-0-I-638301491408450362.jpg?v=1698812130",
+                    price: 1099
+                },
+
+            ]
+            const card2 = [
+                {
+                    title: "Xiaomi 17 Pro Max",
+                    des: "powerful Snapdragon 8 Elite Gen 5 chip, camera system with 5x optical zoom",
+                    image: "https://www.bigw.com.au/medias/sys_master/images/images/hf4/h5a/116551519567902.jpg",
+                    price: 1599
+                },
+                {
+                    title: "Xiaomi 17 pro",
+                    des: "powerful Snapdragon 8 Elite Gen 5 chip,6.3-inch 1.5K LTPO AMOLED screen,",
+                    image: "https://i.ebayimg.com/images/g/mgAAAeSw6WFo1zk-/s-l1200.jpg",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Xiaomi 17",
+                    des: "6.3‑inch LTPO AMOLED screen with a 1.5K,120 Hz refresh rate for smooth scrolling",
+                    image: "https://cdn.beebom.com/mobile/xiaomi-17-front-back.png",
+                    price: 1249
+                },
+                {
+                    title: "Xiaomi 15 Ultra",
+                    des: "powered by the Snapdragon 8 Elite chip,Display: 6.73-inch WQHD+ LTPO AMOLED",
+                    image: "https://m.media-amazon.com/images/I/61sIPtbcVcL.jpg",
+                    price: 1399
+                },
+
+                {
+                    title: "Xiaomi 15 Pro",
+                    des: "powerful Snapdragon 8 Elite chip,6.73 inch 2K 144Hz LTPO AMOLED display",
+                    image: "https://i.ebayimg.com/images/g/5vIAAOSwXmtnIQhs/s-l400.jpg",
+                    price: 1099
+                },
+                {
+                    title: "Xiaomi 15",
+                    des: "powerful Snapdragon 8 Elite chip,6.36 inch 2K 144Hz LTPO AMOLED display",
+                    image: "https://i.ebayimg.com/images/g/5vIAAOSwXmtnIQhs/s-l400.jpg",
+                    price: 1099
+                },
+                {
+                    title: "xiaomi 15T Pro",
+                    des: "6.83‑inch AMOLED display,144 Hz refresh rate for smoother scrolling and gaming",
+                    image: "https://bestmobilephone.com.au/wp-content/uploads/2025/09/Xiaomi-15T-Pro-Mocha-Gold.jpg",
+                    price: 1599
+                },
+                {
+                    title: "Xiaomi 15T",
+                    des: "Dimensity 8400-Ultra chip,50MP Leica triple-camera system",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJkw9ubk-ye0ULQIBvWKp2feeTMPKJVrzbEQ&s",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Xiaomi 14 Ultra",
+                    des: "6.7-inch Super Retina XDR OLED display,48 MP main wide with sensor-shift optical image",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8LKHzAC92CmPtegK_rxFW9nfpnvxVrjRTnA&s",
+                    price: 1249
+                },
+                {
+                    title: "Iphone 15 Pro",
+                    des: "6.1-inch Super Retina XDR OLED with adaptive refresh up to 120 Hz,Apple A17 Pro chip",
+                    image: "https://shop.greengadgets.net.au/cdn/shop/products/IPH15PRO128BLKA_800x.jpg?v=1749775023",
+                    price: 1399
+                },
+
+                {
+                    title: "Xiaomi 14 Pro",
+                    des: "6.1-inch Super Retina XDR OLED display with 60 Hz,48 MP Main with sensor-shift optical image",
+                    image: "https://i.ebayimg.com/images/g/41wAAOSwQK5l1rUF/s-l1200.jpg",
+                    price: 1099
+                },
+                {
+                    title: "Iphone 15 Plus",
+                    des: "Powered by the 8 ellite chip,6.7-inch Super Retina XDR OLED",
+                    image: "https://i.ebayimg.com/images/g/NAEAAOSwiJ1lPHAg/s-l400.jpg",
+                    price: 1099
+                },
+
+            ]
+            const card3 = [
+                {
+                    title: "Samsung S25 Ultra",
+                    des: "powerful Snapdragon 8 Elite Gen 5 chip, camera system with 5x optical zoom",
+                    image: "https://mdsmobile.ae/cdn/shop/files/sm-s938_galaxys25ultra_front_titaniumgray_241107_8bcd2867-b7e3-4024-9f6d-bd96556e5343_800x.png?v=1754053503",
+                    price: 1599
+                },
+                {
+                    title: "Samsung S25 Plus",
+                    des: "powerful Snapdragon 8 Elite Gen 5 chip,6.3-inch 1.5K LTPO AMOLED screen,",
+                    image: "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-gas21/navy/landscape-front.png",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Samsung S25",
+                    des: "6.3‑inch LTPO AMOLED screen with a 1.5K,120 Hz refresh rate for smooth scrolling",
+                    image: "https://images.samsung.com/is/image/samsung/p6pim/au/2501/gallery/au-galaxy-s25-s931-sm-s931blbfats-544653834?$720_576_JPG$",
+                    price: 1249
+                },
+                {
+                    title: "Samsung S25 Edge",
+                    des: "powered by the Snapdragon 8 Elite chip,Display: 6.73-inch WQHD+ LTPO AMOLED",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCEQDXxgrlNyyTtNH083X6z20vPXujKRL6Q&s",
+                    price: 1399
+                },
+
+                {
+                    title: "Samsung S24 Ultra",
+                    des: "powerful Snapdragon 8 Elite chip,6.73 inch 2K 144Hz LTPO AMOLED display",
+                    image: "https://www.firstnet.com/content/dam/firstnet/images/image-and-text/imagetxt-18e9ae62-5aba-4b8d-a1eb-c5d00742e5e3.jpg",
+                    price: 1099
+                },
+                {
+                    title: "Samsung S24 Plus",
+                    des: "powerful Snapdragon 8 Elite chip,6.36 inch 2K 144Hz LTPO AMOLED display",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvcXizVikkW70h2D169LCc85y5dXkE6Nn0oA&s",
+                    price: 1099
+                },
+                {
+                    title: "Samsung S24",
+                    des: "6.83‑inch AMOLED display,144 Hz refresh rate for smoother scrolling and gaming",
+                    image: "https://shop.greengadgets.net.au/cdn/shop/files/SAMS921B128BLKD.jpg?v=1749774821",
+                    price: 1599
+                },
+                {
+                    title: "Samsung S24 Fe",
+                    des: "Dimensity 8400-Ultra chip,50MP Leica triple-camera system",
+                    image: "https://bestmobilephone.com.au/wp-content/uploads/2024/10/S24FE-Gray.jpg",
+                    price: 1099
+                },
+
+
+                {
+                    title: "Samsung S23 Ultra",
+                    des: "6.7-inch Super Retina XDR OLED display,48 MP main wide with sensor-shift optical image",
+                    image: "https://www.jbhifi.com.au/cdn/shop/files/a4c3c8d561974483b6472e315f6a6380_8a931652-f6fc-442d-a1d2-98d6f9d45ab2.jpg?v=1733826400",
+                    price: 1249
+                },
+                {
+                    title: "Samsung S23 Plus",
+                    des: "6.1-inch Super Retina XDR OLED with adaptive refresh up to 120 Hz,Apple A17 Pro chip",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPYJ3WhZfniXNm2oqkso4T2sNlt3yttkdUw&s",
+                    price: 1399
+                },
+
+                {
+                    title: "Samsung S23",
+                    des: "6.1-inch Super Retina XDR OLED display with 60 Hz,48 MP Main with sensor-shift optical image",
+                    image: "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-s23fe/mint/landscape-front.png",
+                    price: 1099
+                },
+                {
+                    title: "Samsung S23 Fe",
+                    des: "Powered by the 8 ellite chip,6.7-inch Super Retina XDR OLED",
+                    image: "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-s23fe/mint/landscape-front.png",
+                    price: 1099
+                },
+
+            ]
+            const container = document.getElementById("cards");
+            const container2 = document.getElementById("cards2");
+            const container3 = document.getElementById("cards3");
+
+            container.innerHTML = card.map(item => `
+    <div class="h-[300px] md:h-[400px] bg-white flex flex-col justify-center items-center rounded shadow hover:shadow-lg cursor-pointer mt-5">
+      <div class=" text-center">
+        <h1 class="text-[15px] md:text-[27px] font-bold">${item.title}</h1>
+        <p class="text-[12px] md:text-[17px] text-black/60">${item.des}</p>
+      </div>
+
+      <img src="${item.image}" class="w-[100px] mt-[30px] h-[100px] md:w-[200px] md:h-[150px]" />
+      <button class="px-4 py-1 bg-black text-white rounded-[10px] mt-[30px]  hover:bg-gray-800">
+        ${item.price}$
+      </button>
+    </div>
+  `).join("");
+            container2.innerHTML = card2.map(item => `
+    <div class="h-[300px] md:h-[400px] bg-white flex flex-col justify-center items-center rounded shadow hover:shadow-lg cursor-pointer mt-5">
+      <div class=" text-center">
+        <h1 class="text-[15px] md:text-[27px] font-bold">${item.title}</h1>
+        <p class="text-[12px] md:text-[17px] text-black/60">${item.des}</p>
+      </div>
+
+      <img src="${item.image}" class="w-[100px] mt-[30px] h-[100px] md:w-[200px] md:h-[150px]" />
+      <button class="px-4 py-1 bg-black text-white rounded-[10px] mt-[30px]  hover:bg-gray-800">
+        ${item.price}$
+      </button>
+    </div>
+  `).join("");
+            container3.innerHTML = card3.map(item => `
+    <div class="h-[300px] md:h-[400px] bg-white flex flex-col justify-center items-center rounded shadow hover:shadow-lg cursor-pointer mt-5">
+      <div class=" text-center">
+        <h1 class="text-[15px] md:text-[27px] font-bold">${item.title}</h1>
+        <p class="text-[12px] md:text-[17px] text-black/60">${item.des}</p>
+      </div>
+
+      <img src="${item.image}" class="w-[100px] mt-[30px] h-[100px] md:w-[200px] md:h-[150px]" />
+      <button class="px-4 py-1 bg-black text-white rounded-[10px] mt-[30px]  hover:bg-gray-800">
+        ${item.price}$
+      </button>
+    </div>
+  `).join("");
+            function toggleMenu() {
+                document.getElementById("dropdown").classList.toggle("hidden");
+            }
+        </script>
+
+
+
+    </div> <!--div all-->
+
+
+
+</body>
+
+</html>

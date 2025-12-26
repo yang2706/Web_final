@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div
+    class="w-full h-screen flex items-center justify-center bg-black bg-cover bg-center"
+    style="background-image: url('https://i.pinimg.com/1200x/6f/dd/dd/6fdddd7e00f23bad6638657a08a83d50.jpg');"
+  >
+
+    <div class=" backdrop-blur-lg backdrop-brightness-75 w-[420px] h-[580px] rounded-2xl p-8 shadow-xl">
+
+      <!-- Tabs -->
+      <div class="flex gap-6 mb-6">
+        <button class="text-white font-semibold cursor-pointer text-[20px] border-b-2 border-[#ff6500] pb-1">
+          Sign in
+        </button>
+
+        <a href="signup.html">
+          <button class="text-gray-400 text-[20px] cursor-pointer hover:text-white pb-1">
+            Sign up
+          </button>
+        </a>
+      </div>
+
+      <!-- Inputs -->
+      <div class="space-y-4">
+        <input
+          type="text"
+          placeholder="Email/Phone"
+          class="w-full bg-[#2a2a2a] text-gray-200 p-4 rounded-lg focus:outline-none"
+        />
+
+        <div class="relative">
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full bg-[#2a2a2a] text-gray-200 p-4 rounded-lg focus:outline-none"
+            id="password"
+          />
+          <span
+            class="absolute right-4 top-5 text-gray-400 cursor-pointer"
+            onclick="togglePassword()"
+          >
+            <i class="fa-solid fa-eye-slash text-[20px]" id="eyeIcon"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Sign In Button -->
+      <button class="w-full bg-[#8a4a1d] text-gray-200 py-4 mt-5 rounded-lg">
+        Sign in
+      </button>
+
+      <!-- Google Button -->
+      <button class="w-full bg-[#ff6a00] text-white py-4 mt-3 rounded-lg flex items-center justify-center gap-2">
+        <i class="fa-brands fa-google text-[20px]"></i>
+        Sign in with Google
+      </button>
+
+      <!-- Forgot Password -->
+      <p class="mt-4 text-[#ff6a00] text-sm cursor-pointer">
+        Forgot password?
+      </p>
+
+      <p class="text-center text-gray-300 mt-4">More options</p>
+
+      <!-- Facebook Icon -->
+      <div class="flex justify-center mt-4">
+        <i class="fa-brands fa-facebook text-[50px] text-blue-500"></i>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Password Toggle Script -->
+  <script>
+    function togglePassword() {
+      const password = document.getElementById("password");
+      const eyeIcon = document.getElementById("eyeIcon");
+
+      if (password.type === "password") {
+        password.type = "text";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      } else {
+        password.type = "password";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      }
+    }
+  </script>
+</body>
+</html>

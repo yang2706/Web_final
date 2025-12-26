@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div
+    class="w-full h-screen flex items-center justify-center p-4 bg-center bg-cover"
+    style="background-image: url('https://i.pinimg.com/1200x/6f/dd/dd/6fdddd7e00f23bad6638657a08a83d50.jpg');"
+  >
+
+    <div class="backdrop-brightness-75 backdrop-blur-lg w-[420px] h-[580px] rounded-2xl p-8 shadow-xl">
+
+      <!-- Tabs -->
+      <div class="flex gap-6 mb-6">
+        <a href="signin.html">
+          <button class="text-gray-400 pb-1 text-[20px] cursor-pointer hover:text-white">
+            Sign in
+          </button>
+        </a>
+
+        <button class="text-white font-semibold text-[20px] cursor-pointer pb-1 border-b-2 border-[#ff6500]">
+          Sign up
+        </button>
+      </div>
+
+      <!-- Region Select -->
+      <div class="relative mb-4">
+        <select class="w-full bg-[#2a2a2a] text-gray-300 p-4 rounded-lg appearance-none focus:outline-none">
+          <option>Region</option>
+          <option>Cambodia</option>
+          <option>Japan</option>
+          <option>Vietnam</option>
+          <option>Singapore</option>
+          <option>Korea</option>
+          <option>China</option>
+          <option>USA</option>
+          <option>Russia</option>
+        </select>
+        <span class="absolute right-4 top-4 text-gray-400">▼</span>
+      </div>
+
+      <!-- Email -->
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full bg-[#2a2a2a] text-gray-200 p-4 rounded-lg mb-4 focus:outline-none"
+      />
+
+      <!-- Password -->
+      <div class="relative mb-4">
+        <input
+          type="password"
+          id="password"
+          placeholder="Set password"
+          class="w-full bg-[#2a2a2a] text-gray-200 p-4 rounded-lg focus:outline-none"
+        />
+        <span
+          class="absolute right-4 top-5 text-gray-400 cursor-pointer"
+          onclick="togglePassword('password', 'eye1')"
+        >
+          <i id="eye1" class="fa-solid fa-eye-slash text-[20px]"></i>
+        </span>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="relative mb-2">
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Enter your password again"
+          class="w-full bg-[#2a2a2a] text-gray-200 p-4 rounded-lg focus:outline-none"
+        />
+        <span
+          class="absolute right-4 top-5 text-gray-400 cursor-pointer"
+          onclick="togglePassword('confirmPassword', 'eye2')"
+        >
+          <i id="eye2" class="fa-solid fa-eye-slash text-[20px]"></i>
+        </span>
+      </div>
+
+      <!-- Password Rules -->
+      <p class="text-gray-400 text-sm mb-4 leading-tight">
+        Password must be 8–16 characters and include both
+        <br /> numbers and letters
+      </p>
+
+      <!-- Agreement -->
+      <label class="flex items-start gap-2 mt-2 text-gray-300 text-sm">
+        <input type="checkbox" class="w-4 h-4 accent-[#ff6500]" />
+        <span>
+          I've read and agreed to the Xiaomi Account
+          <a href="#" class="text-[#ff6500] underline">User Agreement</a>
+          and
+          <a href="#" class="text-[#ff6500] underline">Privacy Policy</a>.
+        </span>
+      </label>
+
+      <!-- Next Button -->
+      <button class="w-full bg-[#8a4a1d] text-gray-300 py-4 rounded-lg mt-6">
+        Next
+      </button>
+    </div>
+  </div>
+
+  <!-- Password Toggle Script -->
+  <script>
+    function togglePassword(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+
+      if (input.type === "password") {
+        input.type = "text";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      } else {
+        input.type = "password";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <title>Navbar</title>
+
+</head>
+<style>
+    @keyframes slide-right {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="w-full">
+        <!--Navbar-->
+        <div class="bg-white w-full h-[55px] flex items-center justify-between px-[50px] shadow-sm">
+
+            <!-- LEFT -->
+            <div class="flex items-center gap-[50px]">
+
+                <!-- LOGO -->
+                <a href="index.html" class="relative w-[40px] h-[40px] flex items-center justify-center group">
+                    <!-- Default icon -->
+                    <i
+                        class="fa-solid fa-mobile-screen-button text-[30px] text-orange-500 transition-opacity duration-300 group-hover:opacity-0"></i>
+
+                    <!-- Hover icon -->
+                    <i
+                        class="fa-solid fa-house absolute text-[25px] text-orange-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></i>
+                </a>
+
+                <!-- MENU -->
+                <div class="flex items-center gap-[40px] md:flex hidden text-black">
+
+                    <a href="mobile.html" class="relative group hover:text-orange-500">
+                        Mobile
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="watch.html" class="relative group hover:text-orange-500">
+                        Watch
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="smarthome.html" class="relative group hover:text-orange-500">
+                        Smart Home
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Accessories
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <!-- POCO -->
+                    <a href="#" class="px-2 py-1 rounded text-black">
+                        Tablet
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex items-center gap-[20px] relative md:gap-[40px] text-black">
+                <div class="flex items-center gap-[40px] text-black md:flex hidden">
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Discover
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Support
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                    <a href="#" class="relative group hover:text-orange-500">
+                        Community
+                        <span
+                            class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+
+                </div>
+
+                <!-- SEARCH -->
+                <i class="fa-solid fa-magnifying-glass text-[22px] md:text-[28px] cursor-pointer"></i>
+
+                <!-- USER -->
+                <a href="signin.html" class="text-[22px] md:text-[28px] cursor-pointer">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <i class="fa-solid fa-list text-[28px] md:text-[28px]"></i>
+                </div>
+                <div id="dropdown" class="hidden absolute top-full mt-2 w-[130px] bg-white rounded shadow-md">
+                    <a href="mobile.html" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
+                    <a href="watch.html" class="block px-4 py-2 hover:bg-gray-100">Watch</a>
+                    <a href="smarthome.html" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100">Accessories</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tablet</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full h-[500px] flex-cols md:items-center md:justify-around md:flex">
+            <div class="right flex-cols md:flex-col">
+                <h1 id="typing"
+                    class="text-[25px] md:text-[40px] font-bold text-center md:text-start animate-[slide-right_1s_ease-out_forwards]">
+                </h1>
+                <p class="text-[15px] md:text-[20px] font-bold text-center md:text-start">Don't trust someone but our
+                    website
+                </p>
+                <p class="text-[15px] md:text-[20px] text-black/80 mt-4 text-center md:text-start">Your trusted
+                    destination for the latest smartphones, accessories,</p>
+                <p class="text-[15px] md:text-[20px] text-black/80 text-center md:text-start">and unbeatable deals. Shop
+                    easily, securely, and get fast delivery right to your door</p>
+                <div class="mt-6 flex justify-center md:justify-start">
+                    <a href="detailhome.html"><button
+                            class="bg-black text-white py-2 px-6 rounded-xl hover:bg-black/80 cursor-pointer">Learn
+                            more</button></a>
+                </div>
+            </div>
+            <div class="left">
+                <img src="https://png.pngtree.com/png-clipart/20240325/original/pngtree-mobile-shopping-online-store-png-image_14679398.png"
+                    alt="" class="w-[450px]">
+            </div>
+        </div>
+        <div>
+            <h1 class="text-[20px] md:text-[30px] text-center font-bold mt-[120px] md:mt-4 ">Feature Products</h1>
+        </div>
+
+        <div class="h-[100%] flex justify-center">
+            <div
+                class="w-[90%] bg-gray-100 flex pl-[20px] pr-[20px] pt-[20px] mt-[30px] mb-[30px] rounded-[10px] flex-col">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class=''>
+                        <img src="https://i02.appmifile.com/951_operator_global/23/09/2025/93c2fee6fe895005f0ef135af5f8aafe.png?thumb=1&w=1320&f=webp&q=85"
+                            alt="" class='rounded-l-[5px] ' />
+                    </div>
+                    <div class=' flex justify-center flex-col items-center bg-white rounded-r-[5px]'>
+                        <div class='leading-[30px] md:leading-[40px] py-14 md:py-0'>
+                            <h1 class='font-bold text-[16px] md:text-[25px] text-center'>The Gold Collection</h1>
+                            <p class='md:font-bold taxt-black/80 text-center text-[12px] md:text-[15px] md:text-black'>
+                                Discover the golden essentail that defines your style</p>
+                        </div>
+                        <div>
+                            <button
+                                class="px-6 py-2 bg-black text-white rounded-[10px] hidden md:flex hover:bg-black/80 cursor-pointer transition w-[130px] mt-[10px]">Learn
+                                more</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class='grid grid-cols-2 md:grid-cols-4 gap-[19px] mt-[20px] mb-[20px]'>
+                    <div
+                        class='flex flex-col md:py-[70px] py-[20px] bg-white items-center justify-center hover:cursor-pointer rounded-[10px]'>
+                        <img src="https://i02.appmifile.com/625_operatorx_operatorx_opx/23/09/2025/64d048b5097cac14196626cea59578be.png?thumb=1&w=320&f=webp&q=85"
+                            alt=""
+                            class='w-[120px] h-[120px] md:w-[150px] md:h-[150px] hover:scale-110 transition duration-300' />
+                        <h1 class='font-bold md:text-[20px] text-[13px]'>Xiaomi 15T Pro</h1>
+                        <p class="text-[12px] md:text-[15px]">Mocha Gold</p>
+                    </div>
+                    <div
+                        class='flex flex-col rounded-[10px] hover:cursor-pointer md:py-[70px] py-[20px] bg-white items-center justify-center'>
+                        <img src="https://i02.appmifile.com/524_operatorx_operatorx_opx/24/09/2025/93e327630df9bd89b6e9052c0e69069b.png?thumb=1&w=320&f=webp&q=85"
+                            alt=""
+                            class='w-[120px] h-[120px] md:w-[150px] md:h-[150px] hover:scale-110 transition duration-300' />
+                        <h1 class="font-bold md:text-[20px] text-[13px]">Xiaomi Watch S10</h1>
+                        <p class="text-[12px] md:text-[15px]">Sunset Gold</p>
+                    </div>
+                    <div
+                        class='flex flex-col rounded-[10px] hover:cursor-pointer md:py-[70px] py-[20px] bg-white items-center justify-center'>
+                        <img src="https://i02.appmifile.com/975_operatorx_operatorx_opx/24/09/2025/f80b243d63b6d8096ab7551b0d8996b7.png?thumb=1&w=320&f=webp&q=85"
+                            alt=""
+                            class='w-[120px] h-[120px] md:w-[150px] md:h-[150px] hover:scale-110 transition duration-300' />
+                        <h1 class='font-bold md:text-[20px] text-[13px]'>Xiaomi Smart Band 10</h1>
+                        <p class="text-[12px] md:text-[15px]">Glimer Gold</p>
+                    </div>
+                    <div
+                        class='flex flex-col rounded-[10px] hover:cursor-pointer md:py-[70px] py-[20px] bg-white items-center justify-center'>
+                        <img src="https://i02.appmifile.com/274_operatorx_operatorx_opx/24/09/2025/99d223ecbbc1dc749bda85236dd18c16.png?thumb=1&w=320&f=webp&q=85"
+                            alt=""
+                            class='w-[120px] h-[120px] md:w-[150px] md:h-[150px] hover:scale-110 transition duration-300' />
+                        <h1 class='font-bold md:text-[20px] text-[13px]'>Xiaomi OpenWear</h1>
+                        <p class="text-[12px] md:text-[15px]">Sand Gold</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <h1 class="text-center text-[30px] font-bold mt-[70px]">Support</h1>
+
+
+        <div class="w-full grid grid-cols-2 md:grid-cols-4 mt-[30px] px-[20px] md:px-[80px] mb-[120px] gap-[30px]">
+
+            <div class="flex flex-col justify-center items-center">
+                <i
+                    class="fa-solid fa-headset text-[70px] text-gray-500 hover:text-black cursor-pointer transition duration-300"></i>
+                <div class="text-center">
+                    <h1 class="text-[24px] mt-[20px]">Customer Support</h1>
+                    <p class="leading-[20px] mt-[15px]">
+                        Contact us via live-chat, email,<br />
+                        and phone call
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <i
+                    class="fa-solid fa-shield-halved text-[70px] text-gray-500 hover:text-black cursor-pointer transition duration-300"></i>
+                <div class="text-center">
+                    <h1 class="text-[24px] mt-[20px]">Warranty</h1>
+                    <p class="leading-[20px] mt-[15px]">
+                        Local warranty policy protection<br />
+                        is provided
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <i
+                    class="fa-solid fa-book-open text-[70px] text-gray-500 hover:text-black cursor-pointer transition duration-300"></i>
+                <div class="text-center">
+                    <h1 class="text-[24px] mt-[20px]">User Guides</h1>
+                    <p class="leading-[20px] mt-[15px]">
+                        Find and download your Xiaomi<br />
+                        product user guide
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <i
+                    class="fa-solid fa-circle-question text-[70px] text-gray-500 hover:text-black cursor-pointer transition duration-300"></i>
+                <div class="text-center">
+                    <h1 class="text-[24px] mt-[20px]">FAQ</h1>
+                    <p class="leading-[20px] mt-[15px]">
+                        Search for help about Xiaomi
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <footer class="w-full bg-neutral-900 px-6 py-14">
+        <div class="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- SUPPORT -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">SUPPORT</h2>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Contact us</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Guide</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Warranty</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">International
+                    Warranty</a>
+               
+            </div>
+
+            <!-- ABOUT US -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">ABOUT US</h2>
+
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Leadership Team</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Agreement</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Integrity &
+                    Compliance</a>
+                
+            </div>
+
+            <!-- XIAOMI PROJECTS -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">PROJECTS</h2>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Renovation</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">POP Run
+                    2025</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Imagery Awards
+                    2025</a>
+            </div>
+
+            <!-- SOCIAL & NEWSLETTER -->
+            <div class="flex flex-col space-y-5">
+                <h2 class="text-white font-bold text-lg">Follow Us</h2>
+
+                <div class="flex gap-4 text-3xl text-gray-400">
+                    <a href="https://www.facebook.com/share/17sWnVeeUP/" target="_blank"
+                        class="hover:text-white transition">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://youtube.com/@xiaomi" target="_blank" class="hover:text-white transition">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                    <a href="https://x.com/Xiaomi" target="_blank" class="hover:text-white transition">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/xiaomi.global/" target="_blank"
+                        class="hover:text-white transition">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+
+                </div>
+
+                <p class="text-white font-semibold">Subscribe to our newsletter</p>
+
+                <input type="email" placeholder="Enter email address"
+                    class="w-full rounded-xl bg-transparent border border-gray-600 px-4 py-2 text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition" />
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-gray-500 text-sm">
+            © 2025 Xiaomi. All rights reserved.
+        </div>
+    </footer>
+
+
+    </div> <!--Div all-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("dropdown").classList.toggle("hidden");
+
+        }
+        const text = "Welcome to our online shop!";
+        const speed = 80;     // typing speed
+        const delay = 4000;    // pause before restart
+
+        let index = 0;
+        const el = document.getElementById("typing");
+
+        function typeLoop() {
+            if (index < text.length) {
+                el.textContent += text[index];
+                index++;
+                setTimeout(typeLoop, speed);
+            } else {
+                setTimeout(() => {
+                    el.textContent = "";
+                    index = 0;
+                    typeLoop();
+                }, delay);
+            }
+        }
+
+        typeLoop();
+    </script>
+
+</body>
+
+
+</html>

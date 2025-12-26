@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>iPhone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!--Navbar-->
+    <div class="bg-white w-full h-[55px] flex items-center justify-between px-[50px] shadow-sm">
+
+        <!-- LEFT -->
+        <div class="flex items-center gap-[50px]">
+
+            <!-- LOGO -->
+            <a href="index.html" class="relative w-[40px] h-[40px] flex items-center justify-center group">
+                <!-- Default icon -->
+                <i
+                    class="fa-solid fa-mobile-screen-button text-[30px] text-orange-500 transition-opacity duration-300 group-hover:opacity-0"></i>
+
+                <!-- Hover icon -->
+                <i
+                    class="fa-solid fa-house absolute text-[25px] text-orange-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></i>
+            </a>
+
+            <!-- MENU -->
+            <div class="flex items-center gap-[40px] md:flex hidden text-black">
+
+                <a href="mobile.html" class="relative group hover:text-orange-500">
+                    Mobile
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="watch.html" class="relative group hover:text-orange-500">
+                    Watch
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="smarthome.html" class="relative group hover:text-orange-500">
+                    Smart Home
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="#" class="relative group hover:text-orange-500">
+                    Accessories
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <!-- POCO -->
+                <a href="#" class="px-2 py-1 rounded text-black">
+                    Tablet
+                </a>
+
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-[20px] relative md:gap-[40px] text-black">
+            <div class="flex items-center gap-[40px] text-black md:flex hidden">
+                <a href="#" class="relative group hover:text-orange-500">
+                    Discover
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="#" class="relative group hover:text-orange-500">
+                    Support
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="#" class="relative group hover:text-orange-500">
+                    Community
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+            </div>
+
+            <!-- SEARCH -->
+            <i class="fa-solid fa-magnifying-glass text-[22px] md:text-[28px] cursor-pointer"></i>
+
+            <!-- USER -->
+            <a href="signin.html" class="text-[22px] md:text-[28px] cursor-pointer">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <div class="md:hidden" onclick="toggleMenu()">
+                <i class="fa-solid fa-list text-[28px] md:text-[28px]"></i>
+            </div>
+            <div id="dropdown" class="hidden absolute top-full mt-2 w-[180px] bg-white border rounded shadow-md">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Wearables</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+            <!-- Text -->
+            <div>
+                <h2 class="text-5xl font-bold mb-6">
+                    Samsung Watch
+                </h2>
+
+                <p class="text-lg text-gray-600 mb-6">
+                    The most powerful iPhone ever. Featuring an advanced 48MP camera system,
+                    industry-leading 16x optical zoom, and the ultra-fast A19 Pro chip with
+                    vapor cooling for sustained performance.
+                </p>
+
+                <div class="flex gap-4">
+                    <button class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
+                        Buy Now
+                    </button>
+                    <button class="border border-black px-8 py-3 rounded-full hover:bg-gray-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div>
+                <img src="https://jmau.imgix.net/media/catalog/product/f/2/f24-002_front2_hero_240429_44mm-40mm_seau-bluetooth_nfctiug6gmcjd4dj.jpg"
+                    alt="Apple Watch" class="rounded-3xl w-[400px]" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">
+                Key Features
+            </h3>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">48MP Pro Camera</h4>
+                    <p class="text-gray-600">
+                        Capture stunning photos with advanced low-light performance and AI photography.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">16× Optical Zoom</h4>
+                    <p class="text-gray-600">
+                        Longest optical zoom ever on an iPhone for professional-grade shots.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">A19 Pro Chip</h4>
+                    <p class="text-gray-600">
+                        Lightning-fast performance with vapor cooling for gaming and multitasking.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">All-Day Battery</h4>
+                    <p class="text-gray-600">
+                        Optimized power efficiency keeps you going from morning to night.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-6">
+                Premium Design
+            </h3>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Crafted with aerospace-grade materials, the iPhone 17 Pro Max combines durability
+                with elegance. Available in multiple stunning finishes.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-black py-16">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold text-white mb-4">
+                Experience the Future of iPhone
+            </h3>
+            <p class="text-gray-300 mb-6">
+                Power, performance, and photography — all in one device.
+            </p>
+            <a href="index.html"
+                class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+                Continue Shopping
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t">
+        <p class="text-center text-gray-500 text-sm">
+            © 2025 Apple Series. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
