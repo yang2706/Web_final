@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support | Mobile Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-900">
+    <div
+        class="bg-white w-full fixed top-0 left-0 z-50 opacity-100 h-[55px] flex items-center justify-between px-[50px] shadow-sm">
+
+        <!-- LEFT -->
+        <div class="flex items-center gap-[50px]">
+
+            <!-- LOGO -->
+            <a href="index.html" class="relative w-[40px] h-[40px] flex items-center justify-center group">
+                <!-- Default icon -->
+                <i
+                    class="fa-solid fa-mobile-screen-button text-[30px] text-orange-500 transition-opacity duration-300 group-hover:opacity-0"></i>
+
+                <!-- Hover icon -->
+                <i
+                    class="fa-solid fa-house absolute text-[25px] text-orange-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></i>
+            </a>
+
+            <!-- MENU -->
+            <div class="flex items-center gap-[40px] md:flex hidden text-black">
+
+                <a href="mobile.html" class="relative group hover:text-orange-500">
+                    Mobile
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="watch.html" class="relative group hover:text-orange-500">
+                    Watch
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="smarthome.html" class="relative group hover:text-orange-500">
+                    Smart Home
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="#" class="relative group hover:text-orange-500">
+                    Accessories
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-[20px] relative md:gap-[40px] text-black">
+            <div class="flex items-center gap-[40px] text-black md:flex hidden">
+                <a href="aboutus.html" class="relative group hover:text-orange-500">
+                    About us
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+                <a href="support.html" class="relative group hover:text-orange-500">
+                    Support
+                    <span
+                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
+                </a>
+
+
+
+            </div>
+
+            <!-- SEARCH -->
+            <i class="fa-solid fa-magnifying-glass text-[22px] md:text-[28px] cursor-pointer"></i>
+
+            <!-- USER -->
+            <a href="signin.html" class="text-[22px] md:text-[28px] cursor-pointer">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <div class="md:hidden" onclick="toggleMenu()">
+                <i class="fa-solid fa-list text-[28px] md:text-[28px]"></i>
+            </div>
+            <div id="dropdown" class="hidden absolute top-full mt-2 w-[130px] bg-white rounded shadow-md">
+                <a href="mobile.html" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
+                <a href="watch.html" class="block px-4 py-2 hover:bg-gray-100">Watch</a>
+                <a href="smarthome.html" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
+                <a href="" class="block px-4 py-2 hover:bg-gray-100">Accessories</a>
+                <a href="aboutus.html" class="block px-4 py-2 hover:bg-gray-100">About us</a>
+                <a href="support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+            </div>
+
+        </div>
+    </div>
+    <header class="bg-white py-12 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-extrabold mt-6 text-gray-900">How can we help you?</h1>
+            <p class="mt-4 text-lg text-gray-600">Search our FAQs or get in touch with our tech experts.</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Contact Us</h2>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                    <div class="bg-orange-100 p-3 rounded-lg text-orange-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Email Support</h4>
+                        <p class="text-sm text-gray-600">support@yourmobile.com</p>
+                        <p class="text-xs text-gray-400 mt-1">Response time: < 24 hrs</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-4">
+                    <div class="bg-orange-100 p-3 rounded-lg text-orange-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Phone Support</h4>
+                        <p class="text-sm text-gray-600">+1 (555) 000-0000</p>
+                        <p class="text-xs text-gray-400 mt-1">Mon-Fri: 9am - 6pm</p>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600 p-6 rounded-2xl shadow-lg text-white">
+                    <h4 class="font-bold text-lg">Live Chat</h4>
+                    <p class="text-sm opacity-90 mb-4">Chat with a technician right now for instant help.</p>
+                    <button
+                        class="bg-white text-orange-600 px-4 py-2 rounded-lg font-bold text-sm hover:bg-gray-100 transition">Start
+                        Chat</button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-12">
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <details
+                            class="group bg-white rounded-xl border border-gray-200 p-4 transition-all hover:border-orange-300">
+                            <summary class="list-none flex justify-between items-center font-semibold cursor-pointer">
+                                <span>How do I track my order?</span>
+                                <span class="group-open:rotate-180 transition-transform">▼</span>
+                            </summary>
+                            <p class="mt-3 text-gray-600 text-sm">Once your order ships, you will receive an email with
+                                a tracking link. You can also track it in the 'My Account' section.</p>
+                        </details>
+
+                        <details
+                            class="group bg-white rounded-xl border border-gray-200 p-4 transition-all hover:border-orange-300">
+                            <summary class="list-none flex justify-between items-center font-semibold cursor-pointer">
+                                <span>What is your return policy?</span>
+                                <span class="group-open:rotate-180 transition-transform">▼</span>
+                            </summary>
+                            <p class="mt-3 text-gray-600 text-sm">We offer a 14-day return policy for unopened items. If
+                                the device is faulty, we provide a full exchange under warranty.</p>
+                        </details>
+
+                        <details
+                            class="group bg-white rounded-xl border border-gray-200 p-4 transition-all hover:border-orange-300">
+                            <summary class="list-none flex justify-between items-center font-semibold cursor-pointer">
+                                <span>Do you provide international shipping?</span>
+                                <span class="group-open:rotate-180 transition-transform">▼</span>
+                            </summary>
+                            <p class="mt-3 text-gray-600 text-sm">Currently, we ship to North America and Europe.
+                                Shipping costs and delivery times vary by location.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold mb-6">Send us a Message</h3>
+                    <form action="#" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Full Name</label>
+                                <input type="text" placeholder="John Doe"
+                                    class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Order Number</label>
+                                <input type="text" placeholder="#12345 (Optional)"
+                                    class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Subject</label>
+                            <select
+                                class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500">
+                                <option>Technical Issue</option>
+                                <option>Billing & Payment</option>
+                                <option>Shipping & Delivery</option>
+                                <option>Returns & Exchange</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
+                            <textarea rows="4" placeholder="Describe your issue..."
+                                class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-orange-600 text-white font-bold py-3 rounded-lg hover:bg-orange-700 transition">Send
+                            Ticket</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-neutral-900 px-6 py-14">
+        <div class="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- SUPPORT -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">SUPPORT</h2>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Contact us</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Guide</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Warranty</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">International
+                    Warranty</a>
+
+            </div>
+
+            <!-- ABOUT US -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">ABOUT US</h2>
+
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Leadership Team</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">User Agreement</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Integrity &
+                    Compliance</a>
+
+            </div>
+
+            <!-- XIAOMI PROJECTS -->
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-white font-bold text-lg">PROJECTS</h2>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Renovation</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">POP Run
+                    2025</a>
+                <a href="#" class="text-gray-400 hover:text-white hover:underline transition">Imagery Awards
+                    2025</a>
+            </div>
+
+            <!-- SOCIAL & NEWSLETTER -->
+            <div class="flex flex-col space-y-5">
+                <h2 class="text-white font-bold text-lg">Follow Us</h2>
+
+                <div class="flex gap-4 text-3xl text-gray-400">
+                    <a href="https://www.facebook.com/share/17sWnVeeUP/" target="_blank"
+                        class="hover:text-white transition">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://youtube.com/@xiaomi" target="_blank" class="hover:text-white transition">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                    <a href="https://x.com/Xiaomi" target="_blank" class="hover:text-white transition">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/xiaomi.global/" target="_blank"
+                        class="hover:text-white transition">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+
+                </div>
+
+                <p class="text-white font-semibold">Subscribe to our newsletter</p>
+
+                <input type="email" placeholder="Enter email address"
+                    class="w-full rounded-xl bg-transparent border border-gray-600 px-4 py-2 text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none transition" />
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-gray-500 text-sm">
+            © 2025 Xiaomi. All rights reserved.
+        </div>
+    </footer>
+<script>
+    
+function toggleMenu() {
+            document.getElementById("dropdown").classList.toggle("hidden");
+
+        }
+</script>
+</body>
+
+</html>

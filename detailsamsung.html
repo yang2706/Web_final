@@ -12,7 +12,7 @@
 <body class="bg-white text-gray-900">
 
     <!-- Navbar (same as your iPhone page) -->
-    <div class="bg-white w-full h-[55px] flex items-center justify-between px-[50px] shadow-sm">
+    <div class="bg-white w-full fixed top-0 left-0 z-50 opacity-100 h-[55px] flex items-center justify-between px-[50px] shadow-sm">
 
         <!-- LEFT -->
         <div class="flex items-center gap-[50px]">
@@ -56,9 +56,7 @@
                 </a>
 
                 <!-- POCO -->
-                <a href="#" class="px-2 py-1 rounded text-black">
-                    Tablet
-                </a>
+                
 
             </div>
         </div>
@@ -66,23 +64,19 @@
         <!-- RIGHT -->
         <div class="flex items-center gap-[20px] relative md:gap-[40px] text-black">
             <div class="flex items-center gap-[40px] text-black md:flex hidden">
-                <a href="#" class="relative group hover:text-orange-500">
-                    Discover
+                <a href="aboutus.html" class="relative group hover:text-orange-500">
+                    About us
                     <span
                         class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
                 </a>
 
-                <a href="#" class="relative group hover:text-orange-500">
+                <a href="support.html" class="relative group hover:text-orange-500">
                     Support
                     <span
                         class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
                 </a>
 
-                <a href="#" class="relative group hover:text-orange-500">
-                    Community
-                    <span
-                        class="absolute left-0 -bottom-[2px] w-0 h-[1.5px] bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
-                </a>
+               
 
             </div>
 
@@ -96,11 +90,14 @@
             <div class="md:hidden" onclick="toggleMenu()">
                 <i class="fa-solid fa-list text-[28px] md:text-[28px]"></i>
             </div>
-            <div id="dropdown" class="hidden absolute top-full mt-2 w-[180px] bg-white border rounded shadow-md">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Wearables</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
-            </div>
+            <div id="dropdown" class="hidden absolute top-full mt-2 w-[130px] bg-white rounded shadow-md">
+                    <a href="mobile.html" class="block px-4 py-2 hover:bg-gray-100">Mobile</a>
+                    <a href="watch.html" class="block px-4 py-2 hover:bg-gray-100">Watch</a>
+                    <a href="smarthome.html" class="block px-4 py-2 hover:bg-gray-100">Smart Home</a>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100">Accessories</a>
+                    <a href="aboutus.html" class="block px-4 py-2 hover:bg-gray-100">About us</a>
+                    <a href="support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                </div>
 
         </div>
     </div>
